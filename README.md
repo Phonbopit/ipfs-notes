@@ -22,7 +22,7 @@ A multihash is a self-describing hash which itself contains metadata (length and
 
 ---
 
-Convert CIDv0 to CIDv1
+## How to convert IPFS CIDv0 to CIDv1?
 
 Install
 
