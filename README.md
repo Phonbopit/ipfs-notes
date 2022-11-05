@@ -1,5 +1,11 @@
 # Learn IPFS
 
+## Resources
+
+- [IPFS Camp 2022](https://github.com/ipfs/ipfs-camp-2022)
+- [IPFS Tutorial](https://proto.school/)
+- [Awesome IPFS](https://github.com/ipfs/awesome-ipfs)
+
 
 ## What is a CID?
 
