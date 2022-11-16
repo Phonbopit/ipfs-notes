@@ -46,3 +46,71 @@ export const toV1 = (cidv0: string) => CID.parse(cidv0).toV1().toString()
 // toV1('Qm....')
 ```
 
+## IPFS CLI
+
+Install on Mac
+
+```
+brew install ipfs
+```
+
+Init
+
+```
+ipfs init
+```
+
+Run a daemon
+
+```
+ipfs daemon
+# get id
+ipfs id
+```
+
+Run web ui
+
+- http://localhost:5001/webui
+
+Get started
+
+```
+ipfs cat /ipfs/QmQPeNsJPyVWPFDVHb77w8G42Fvo15z4bG2X8D2GhfbSXc/readme
+```
+
+Add a new file to ipfs
+
+```
+echo "Hello World" > hello.txt
+ipfs add hello.txt
+```
+
+View a content with `cat`
+
+```
+ipfs cat <CID>
+```
+
+Add a directory to ipfs
+
+```
+mkdir my_folder
+echo "Hello" > my_folder/hello.txt
+
+ipfs add -r my_folder
+```
+
+Get detail / view directory
+
+```
+ipfs ls <CID>
+ipfs ls <CID>/hello.txt
+ipfs cat <CID>/hello.txt
+```
+
+Get CID of directory without upload to IPFS, this case we can get root CID for a folder and each image inside have own CID, we can set to a nft contract and upload actual image later.
+
+```
+// get CID of images folder.
+ipfs add --only-hash -r images
+```
